@@ -402,6 +402,7 @@ uri::_S_percent_decode(
     std::ostringstream os;
     int state = 0;
     char nibble[2], c;
+    nibble[0] = 0;
     
     while (is >> c) {
         if (state == 0) {
