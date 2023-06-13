@@ -278,7 +278,8 @@ basic_socket::sendto(
     const std::string& __address,
     message_flags      __flags)
 {
-    ASSERT_MOVED
+    if (!m_info_) throw impact_error("port: " + std::to_string(__port) +  ", address: " + __address);
+    // ASSERT_MOVED
     std::shared_ptr<struct sockaddr> destination_address;
 
     size_t size;
