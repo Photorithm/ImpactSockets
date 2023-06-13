@@ -1,12 +1,4 @@
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - #
-# IMPACTSOCKETS VERSION                                   #
-# - - - - - - - - - - - - - - - - - - - - - - - - - - - - #
-
-SET(IMPACT_VERSION_MAJOR 0)
-SET(IMPACT_VERSION_MINOR 1)
-SET(IMPACT_VERSION_PATCH 0)
-
-# - - - - - - - - - - - - - - - - - - - - - - - - - - - - #
 # COMPILER CONFIGURATION                                  #
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - #
 
