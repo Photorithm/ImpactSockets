@@ -77,6 +77,7 @@ basic_socket::basic_socket(const basic_socket& __rvalue)
 
 basic_socket::basic_socket(basic_socket&& __rvalue)
 {
+    printf("basic_socket::copy_ctor::move\n");
     CATCH_ASSERT(_M_move(std::move(__rvalue));)
 }
 
@@ -164,6 +165,7 @@ basic_socket::operator=(const basic_socket& __rvalue)
 basic_socket&
 basic_socket::operator=(basic_socket&& __rvalue)
 {
+    printf("basic_socket::equals_operator::move\n");
     if (m_info_ && m_info_.use_count() > 0)
         CATCH_ASSERT(_M_dtor();)
     CATCH_ASSERT(_M_move(std::move(__rvalue));)
